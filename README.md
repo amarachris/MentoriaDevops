@@ -2,10 +2,6 @@
 
 Auxiliar os inciantes a montar o melhor ambiente de estudo.
 
-### Segue os links de referência:
-
-Você vai precisar do Docker: https://docs.docker.com/engine/install/ubuntu/
-
 ### Segue as instalações e o passo-a-passo em ordem
 
 ### Marcar o DNS no host do Server:
@@ -22,7 +18,7 @@ sudo apt-get update && sudo apt upgrade -y
 sudo apt-get -y install gnupg2 ca-certificates curl apt-transport-https iptables
 ````
 ### Instalar Helm V3
-Additional Information - https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+Additional Information - https://helm.sh/docs/intro/install/
 ````
 Additional Information - https://helm.sh/docs/intro/install/
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
@@ -50,3 +46,21 @@ Additional Information - https://minikube.sigs.k8s.io/docs/start/
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+````
+```
+````
+### Instalar Docker
+Additional Information - https://docs.docker.com/engine/install/ubuntu/
+````
+ sudo apt-get update
+ sudo apt-get install ca-certificates curl gnupg
+ sudo install -m 0755 -d /etc/apt/keyrings
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+ sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ sudo apt-get update
+ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
