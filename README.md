@@ -4,8 +4,6 @@
     :construction:  Projeto em construção  :construction:
 </h4>
 
-> :construction: Projeto em construção :construction:
-
 Auxiliar os inciantes a montar o melhor ambiente de estudo.
 
 ### Segue as instalações e o passo-a-passo em ordem
