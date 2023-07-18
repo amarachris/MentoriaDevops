@@ -1,10 +1,10 @@
 <h1 align="center"> MentoriaDevops </h1>
 
-Auxiliar os inciantes a montar o melhor ambiente de estudo.
-
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
+
+Auxiliar os inciantes a montar o melhor ambiente de estudo.
 
 ### Segue as instalações e o passo-a-passo em ordem
 
