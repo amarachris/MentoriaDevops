@@ -398,3 +398,11 @@ Já o nosso `ConfigMap` é um `ConfigMap` que terá a configuração default do 
 ```bash
 argocd app create nginx-server --repo https://github.com/amarachris/Argocd.git --path . --dest-server https://192.168.49.2:8443 --dest-namespace default 
 ```
+&nbsp;
+
+Onde:
+* `nginx-app` é o nome da nossa aplicação
+* `repo` é o repo onde está o nosso código
+* `path` é o caminho onde está o nosso código
+* `dest-server` é o cluster onde queremos fazer o deploy
+* `dest-namespace` é o namespace onde queremos fazer o deploy
