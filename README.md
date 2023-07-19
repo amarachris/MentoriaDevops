@@ -406,3 +406,12 @@ Onde:
 * `path` é o caminho onde está o nosso código
 * `dest-server` é o cluster onde queremos fazer o deploy
 * `dest-namespace` é o namespace onde queremos fazer o deploy
+
+Observação:
+Problemas com conexão com minkube realizar o throubleshoot abaixo
+
+```bash
+rm /tmp/juju-*
+minikube delete && minikube start
+minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+```
