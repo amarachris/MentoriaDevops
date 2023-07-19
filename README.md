@@ -73,4 +73,4 @@ Link - https://bytexd.com/x2go-ubuntu/
 ````
 sudo apt update
 sudo apt install x2goserver x2goserver-xsession
-sudo apt install lxde
+sudo apt install mate-core mate-desktop-environment mate-notification-daemon
