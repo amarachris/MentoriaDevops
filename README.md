@@ -394,3 +394,7 @@ O nosso `Deployment` é bem simples, ele cria um `Pod` com dois containers, um q
 O nosso `Service` é bem simples também, ele expõe a porta `9113` do nosso `Pod`, que é a porta que o `nginx-exporter`.
 
 Já o nosso `ConfigMap` é um `ConfigMap` que terá a configuração default do nginx, que é o `default.conf`.
+
+```bash
+argocd app create nginx-server --repo https://github.com/amarachris/Argocd.git --path . --dest-server https://192.168.49.2:8443 --dest-namespace default 
+```
