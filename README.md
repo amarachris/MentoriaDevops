@@ -412,6 +412,5 @@ Problemas com conexão com minkube realizar o throubleshoot abaixo
 
 ```bash
 rm /tmp/juju-*
-minikube delete && minikube start
-minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+minikube delete && minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
 ```
