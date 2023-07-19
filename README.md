@@ -414,3 +414,16 @@ Problemas com conexão com minkube realizar o throubleshoot abaixo
 rm /tmp/juju-*
 minikube delete && minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
 ```
+Vamos criar para monitoramento do nosso Cluster o Prometheus junto com o Grafana:
+
+```bash
+  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+  helm repo add stable https://charts.helm.sh/stable
+  helm repo update
+  helm install prometheus prometheus-community/kube-prometheus-stack
+  kubectl port-forward deployment/prometheus-grafana 3000
+```
+Login do Grafana assim que fazer o direcionamento para prota 3000, o acesso teria que ser dentro da instância:
+
+username: admin
+password: prom-operator
