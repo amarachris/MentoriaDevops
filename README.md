@@ -74,3 +74,8 @@ Link - https://bytexd.com/x2go-ubuntu/
 sudo apt update
 sudo apt install x2goserver x2goserver-xsession
 sudo apt install mate-core mate-desktop-environment mate-notification-daemon
+````
+### Vamos subir um docker do Mysql
+Link - https://www.appsdeveloperblog.com/how-to-start-mysql-in-docker-container/
+````
+docker run -d -p 3306:3306 --name mysql-A -e MYSQL_ROOT_PASSWORD=Senha123 -e MYSQL_DATABASE=devops -e MYSQL_USER=admin -e MYSQL_PASSWORD=Senha123 mysql/mysql-server:latest
